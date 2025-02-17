@@ -6,6 +6,8 @@ EX: MySQL, PostgreSQL, Oracle Database e Microsoft SQL Server.
 2. O que é um modelo relacional de banco de dados
 É um tipo de modelo de organização de dados em que as informações são estruturadas em tabelas (também chamadas de relações). 
 Nesse modelo, os dados são armazenados em tabela e as relações entre os dados são estabelecidas por meio de chaves (chaves primárias e chaves estrangeiras).
+As linhas representam registros individuais.
+Colunas representam atributos ou campos dos registros.
 
 Tabelas (ou Relações):
 
@@ -22,11 +24,22 @@ Chave Estrangeira (Foreign Key):
 É um atributo (ou conjunto de atributos) que estabelece uma relação entre duas tabelas.
 A chave estrangeira em uma tabela faz referência à chave primária de outra tabela, permitindo que dados de diferentes tabelas sejam vinculados.
 
-Exemplo prático:
-Imagine um banco de dados para uma escola com duas tabelas:
+3. O que são micro serviços?
+
+Microserviços são um estilo de arquitetura de software onde uma aplicação é dividida em pequenos serviços independentes, cada um com uma funcionalidade específica e bem definida. 
+Esses serviços podem ser desenvolvidos, implementados, atualizados e escalados de forma independente.
+
+Caracteristicas de micro serviços
+
+Independencia - Cada microserviço é responsável por uma parte específica da aplicação e opera de forma autônoma, podendo ser desenvolvidos em diferentes linguagens de programação.
+Descentralização - Em uma arquitetura de microserviços, o gerenciamento de dados e o armazenamento são descentralizados, cada serviço pode ter seu proprio banco de dados.
+Autonomia - Cada microserviço pode ser desenvolvido, mantido e implantado por uma equipe independente, permitindo uma maior especialização e inovação.
+
+Exemplo de Arquitetura de Microserviços
+
+Serviço de Catálogo de Produtos: Responsável por listar e detalhar produtos.
+Serviço de Carrinho de Compras: Gerencia o carrinho de compras de cada usuário.
+Serviço de Pagamento: Processa pagamentos de pedidos.
+Serviço de Envio de E-mails: Envia notificações ou confirmação de pedidos por e-mail.
 
 
-Neste caso:
-
-A tabela "Alunos" tem uma chave primária chamada ID_Aluno.
-A tabela "Matriculas" tem uma chave estrangeira chamada ID_Aluno, que se refere à chave primária da tabela Alunos, ligando as duas tabelas.
