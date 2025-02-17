@@ -1,0 +1,32 @@
+1. O que é banco de dasdos e a relação com sistema gerenciador de BD (SGBD)
+A relação entre um e outro é que o SGBD facilita a criação, gerenciamento e manutenção de banco de dados, fornecendo as ferramentas neessarias para armazenar, manipular, garantir a integridade, gerenciar a segurança,  controlar o acesso simultaneo e fazer backup dos dados.
+Ou seja, o BD é o repositorio e o SGBD é a ferramenta que possibilita tudo isso.
+EX: MySQL, PostgreSQL, Oracle Database e Microsoft SQL Server.
+
+2. O que é um modelo relacional de banco de dados
+É um tipo de modelo de organização de dados em que as informações são estruturadas em tabelas (também chamadas de relações). 
+Nesse modelo, os dados são armazenados em tabela e as relações entre os dados são estabelecidas por meio de chaves (chaves primárias e chaves estrangeiras).
+
+Tabelas (ou Relações):
+
+Cada tabela no banco de dados representa uma relação.
+Cada tabela é composta por linhas (ou registros) e colunas (ou atributos).
+As colunas representam os diferentes atributos dos dados (como nome, idade, etc.), e as linhas representam os dados individuais (ou seja, um registro).
+
+Chave Primária (Primary Key):
+
+É um atributo ou {conjunto de atributos) que identifica unicamente cada linha (registro) na tabela.
+
+Chave Estrangeira (Foreign Key):
+
+É um atributo (ou conjunto de atributos) que estabelece uma relação entre duas tabelas.
+A chave estrangeira em uma tabela faz referência à chave primária de outra tabela, permitindo que dados de diferentes tabelas sejam vinculados.
+
+Exemplo prático:
+Imagine um banco de dados para uma escola com duas tabelas:
+
+
+Neste caso:
+
+A tabela "Alunos" tem uma chave primária chamada ID_Aluno.
+A tabela "Matriculas" tem uma chave estrangeira chamada ID_Aluno, que se refere à chave primária da tabela Alunos, ligando as duas tabelas.
